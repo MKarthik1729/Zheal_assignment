@@ -1,42 +1,54 @@
 :root {
 
-  --primary-color: #1E88E5;   /* Blue - trust, unity */
-  --secondary-color: #43A047; /* Green - growth, hope */
-  --highlight-color: #FFC107; /* Amber - energy, CTA */
+    --primary-color: #1E88E5;
+    /* Blue - trust, unity */
+    --secondary-color: #43A047;
+    /* Green - growth, hope */
+    --highlight-color: #FFC107;
+    /* Amber - energy, CTA */
 
 
-  --text-light: #cecccc;      /* White for dark backgrounds */
-  --text-dark: #212121;       /* Dark for light backgrounds */
+    --text-light: #cecccc;
+    /* White for dark backgrounds */
+    --text-dark: #212121;
+    /* Dark for light backgrounds */
 
-  --background-light: rgba(255,255,255,0.8); /* Neutral page background */
-  --background-dark: #1B1B1B;  /* Optional dark section */
+    --background-light: rgba(255, 255, 255, 0.8);
+    /* Neutral page background */
+    --background-dark: #1B1B1B;
+    /* Optional dark section */
 
 
-  --button-hover: #1565C0;    /* Darker blue for hover states */
-  --accent-light: #E3F2FD;    /* Soft blue tint */
-  --border-color: #E0E0E0;    /* Light gray borders */
+    --button-hover: #1565C0;
+    /* Darker blue for hover states */
+    --accent-light: #E3F2FD;
+    /* Soft blue tint */
+    --border-color: #E0E0E0;
+    /* Light gray borders */
 }
 
 /* Example usage */
 body {
-  background-color: var(--background-light);
-  color: var(--text-dark);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 
-* , body{
-padding: 0;
-margin: 0;
+*,
+body {
+    padding: 0;
+    margin: 0;
 }
 
 
-.heading{
+.heading {
     color: var(--primary-color);
     font-weight: bold;
     font-size: x-large;
 }
-.reqBtn{
+
+.reqBtn {
     background-color: var(--secondary-color);
     padding: 3vh;
     border-radius: 3vh;
@@ -44,114 +56,201 @@ margin: 0;
     font-size: large;
     /* margin-right: 2vw; */
 }
-.banner{
+
+.banner {
     text-align: center;
 }
-.banner p{
+
+.banner p {
     padding: 2vh 0 2vh 0;
 }
 
-.about{
+.about {
     display: flex;
     background-color: var(--accent-light);
 }
 
-.testimonials div{
- display: flex;
- gap:2vw;
+.testimonials{
+        align-items: center;
+    text-align: center;
+    padding: 4vh;
 }
 
-.testimonials div div{
+/* .testimonials div {
+    display: flex;
+    gap: 2vw;
+    justify-content: space-around;
+} */
+
+.testimonials div div {
     flex-direction: column;
+    border: 1px solid var(--background-dark);
+    padding: 3vh;
+    border-radius: 3vh;
 }
+
+.leadform {
+    background-color: var(--accent-light);
+    width: 100vw;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.leadform h3 {
+    padding: 2vh;
+}
+
+.leadform label {
+    display: block;
+    font-size: larger;
+    padding: 2vh;
+}
+
+.leadform input {
+    /* display: block; */
+    /* align-self: center; */
+    padding: 2vh;
+    border-radius: 2vh;
+
+}
+
+.submitBtn {
+    padding: 3vh;
+    margin: 3vh;
+}
+
 
 
 /* Mobile */
 @media (max-width: 767px) {
-.banner{
-    background-image: url('./public/ngo1.jpg');
-    background-position: 20%;
-    min-height: 50vh;
-            align-content: center;
-}
-.banner div{
-    padding: 2vh;
-    background-color: var(--background-light);
-    border-radius: 2vh;
-    margin: 5vw;
-}
-.about{
-    flex-direction: column;
-}
-.about img{
-    height: 50vh;
-}
-.about div{
-    padding: 4vh;
-    align-content: center;
-}
-.about div h3{
-    padding-bottom: 15px;
-}
+    .banner {
+        background-image: url('./public/ngo1.jpg');
+        background-position: 20%;
+        min-height: 50vh;
+        align-content: center;
+    }
 
+    .banner div {
+        padding: 2vh;
+        background-color: var(--background-light);
+        border-radius: 2vh;
+        margin: 5vw;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        height: 50vh;
+    }
+
+    .about div {
+        padding: 4vh;
+        align-content: center;
+    }
+
+    .about div h3 {
+        padding-bottom: 15px;
+    }
+
+    .leadform input {
+        width: 80vw;
+    }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-.banner{
+    .banner {
         background-image: url('./public/ngo1.jpg');
         height: 90vh;
-        padding: 10vh 10vw 10vh 50vw; 
+        padding: 10vh 10vw 10vh 50vw;
         text-align: center;
         align-content: center;
-}
-.banner div{
-    padding: 2vh;
-    background-color: var(--background-light);
-    border-radius: 2vh;
+    }
+
+    .banner div {
+        padding: 2vh;
+        background-color: var(--background-light);
+        border-radius: 2vh;
+    }
+
+
+    .about img {
+        max-height: 50vh;
+        width: 40vw;
+        padding: 10vh;
+    }
+
+    .about div {
+        padding: 4vh;
+        align-content: center;
+    }
+
+    .about div h3 {
+        padding-bottom: 15px;
+    }
+
+.testimonials div {
+    display: flex;
+    gap: 2vw;
+    justify-content: space-around;
 }
 
 
-.about img{
-    max-height: 50vh;
-    width: 40vw;
-    padding: 10vh;
-}
-.about div{
-    padding: 4vh;
-    align-content: center;
-}
-.about div h3{
-    padding-bottom: 15px;
-}
+
+
+    .leadform input {
+        width: 60vw;
+    }
 
 }
 
 /* Laptop / Desktop */
 @media (min-width: 1025px) {
-.banner{
+    .banner {
         background-image: url('./public/ngo1.jpg');
         height: 90vh;
-        padding: 10vh 10vw 10vh 50vw; 
+        padding: 10vh 10vw 10vh 50vw;
+    }
+
+    .banner div {
+        height: 50vh;
+        padding-top: 25vh;
+        padding-left: 10vw;
+    }
+
+    .about {
+        background-color: var(--accent-light);
+    }
+
+    .about img {
+        width: 40vw;
+        padding: 10vh;
+    }
+
+    .about div {
+        padding: 10vh;
+        align-content: center;
+    }
+
+    .about div h3 {
+        padding-bottom: 15px;
+    }
+
+.testimonials div {
+    display: flex;
+    gap: 2vw;
+    justify-content: space-around;
 }
-.banner div{
-    height: 50vh;
-    padding-top: 25vh;
-    padding-left: 10vw;
-}
-.about{
-    background-color: var(--accent-light);
-}
-.about img{
-    width: 40vw;
-    padding: 10vh;
-}
-.about div{
-    padding: 10vh;
-    align-content: center;
-}
-.about div h3{
-    padding-bottom: 15px;
-}
+
+
+
+    .leadform input {
+        width: 50vw;
+    }
+
 
 }
