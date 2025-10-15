@@ -10,26 +10,27 @@
 </head>
 
 <body>
-    <!-- <h1>This is as part of assignmnet</h1> -->
-    <!-- <button class="test" onclick="testFunction()">see console</button> -->
     <section class="banner">
-        <h3>Welcome to Zheal Media Matters</h3>
-        <p>A next-gen digital transformation agency built to amplify the voice of purpose-driven brands, NGOs, startups,
-            and growing enterprises. </p>
-        <button>Leads request</button>
-        <button>About</button>
+        <div>
+            <h3 class="heading">Welcome to Zheal Media Matters</h3>
+            <p>A next-gen digital transformation agency built to amplify the voice of purpose-driven brands, NGOs,
+                startups,
+                and growing enterprises. </p>
+            <button class="reqBtn">Leads request</button>
+            <button class="reqBtn">About</button>
+        </div>
     </section>
     <section class="about">
         <img src="./public/ngo1.jpg" alt="img">
         <div>
-            <h3>About us</h3>
+            <h3 class="heading">About us</h3>
             <p>A next-gen digital transformation agency built to amplify the voice of purpose-driven brands, NGOs,
                 startups, and growing enterprises. </p>
         </div>
     </section>
 
     <section class="testimonials">
-        <h3>Testimonials</h3>
+        <h3 class="heading">Testimonials</h3>
         <div>
             <div>
                 <h3>UserName</h3>
@@ -51,11 +52,10 @@
     </section>
 
     <section class="leadform">
-        <h3>Apply and share your information here</h3>
+        <h3 class="heading">Apply and share your information here</h3>
 
         <form action="https://example.com/lead-endpoint" method="POST">
 
-            <!-- Company Info -->
             <label for="company_name">Company Name:</label>
             <input type="text" id="company_name" name="company_name" required>
 
@@ -71,7 +71,6 @@
             <label for="location">Location / Headquarters:</label>
             <input type="text" id="location" name="location">
 
-            <!-- Contact Person -->
             <label for="contact_name">Full Name:</label>
             <input type="text" id="contact_name" name="contact_name" required>
 
@@ -87,7 +86,6 @@
             <label for="linkedin">LinkedIn Profile:</label>
             <input type="url" id="linkedin" name="linkedin">
 
-            <!-- Lead Qualification -->
             <label for="interested_service">Interested Service / Product:</label>
             <input type="text" id="interested_service" name="interested_service">
 
@@ -100,7 +98,6 @@
             <label for="notes">Additional Notes / Requirements:</label>
             <input type="text" id="notes" name="notes">
 
-            <!-- Submit -->
             <input type="submit" value="Submit">
 
         </form>

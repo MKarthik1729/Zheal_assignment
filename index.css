@@ -1,13 +1,55 @@
+:root {
+
+  --primary-color: #1E88E5;   /* Blue - trust, unity */
+  --secondary-color: #43A047; /* Green - growth, hope */
+  --highlight-color: #FFC107; /* Amber - energy, CTA */
+
+
+  --text-light: #cecccc;      /* White for dark backgrounds */
+  --text-dark: #212121;       /* Dark for light backgrounds */
+
+  --background-light: rgba(255,255,255,0.8); /* Neutral page background */
+  --background-dark: #1B1B1B;  /* Optional dark section */
+
+
+  --button-hover: #1565C0;    /* Darker blue for hover states */
+  --accent-light: #E3F2FD;    /* Soft blue tint */
+  --border-color: #E0E0E0;    /* Light gray borders */
+}
+
+/* Example usage */
+body {
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
 * , body{
 padding: 0;
 margin: 0;
 }
 
-.banner{
-    background-image: url('./public/ngo1.jpg');
-    height: 100vh;
-}
 
+.heading{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: x-large;
+}
+.reqBtn{
+    background-color: var(--secondary-color);
+    padding: 3vh;
+    border-radius: 3vh;
+    color: var(--accent-light);
+    font-size: large;
+    /* margin-right: 2vw; */
+}
+.banner{
+    text-align: center;
+}
+.banner p{
+    padding: 2vh 0 2vh 0;
+}
 
 .about{
     display: flex;
@@ -24,4 +66,51 @@ margin: 0;
 
 .testimonials div div{
     flex-direction: column;
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+.banner{
+    background-image: url('./public/ngo1.jpg');
+    background-position: 20%;
+    min-height: 50vh;
+            align-content: center;
+}
+.banner div{
+    padding: 2vh;
+    background-color: var(--background-light);
+    border-radius: 2vh;
+    margin: 20vw;
+}
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+.banner{
+        background-image: url('./public/ngo1.jpg');
+        height: 90vh;
+        padding: 10vh 10vw 10vh 50vw; 
+        text-align: center;
+        align-content: center;
+}
+.banner div{
+    padding: 2vh;
+    background-color: var(--background-light);
+    border-radius: 2vh;
+}
+}
+
+/* Laptop / Desktop */
+@media (min-width: 1025px) {
+.banner{
+        background-image: url('./public/ngo1.jpg');
+        height: 90vh;
+        padding: 10vh 10vw 10vh 50vw; 
+}
+.banner div{
+    height: 50vh;
+    padding-top: 25vh;
+    padding-left: 10vw;
+}
 }
