@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="" href="">
 </head>
+
 <body>
-    <h1>This is as part of assignmnet</h1>
+    <!-- <h1>This is as part of assignmnet</h1> -->
+    <!-- <button class="test" onclick="testFunction()">see console</button> -->
+    <section class="banner">
+        <h3>Welcome to Zheal Media Matters</h3>
+        <p>A next-gen digital transformation agency built to amplify the voice of purpose-driven brands, NGOs, startups,
+            and growing enterprises. </p>
+        <button>Leads request</button>
+        <button>About</button>
+    </section>
+    <section class="about">
+        <img src="./public/ngo1.jpg" alt="img">
+        <div>
+            <h3>About us</h3>
+            <p>A next-gen digital transformation agency built to amplify the voice of purpose-driven brands, NGOs,
+                startups, and growing enterprises. </p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h3>Testimonials</h3>
+        <div>
+            <div>
+                <h3>UserName</h3>
+                <p>View on our work</p>
+            </div>
+            <div>
+                <h3>UserName</h3>
+                <p>View on our work</p>
+            </div>
+            <div>
+                <h3>UserName</h3>
+                <p>View on our work</p>
+            </div>
+            <div>
+                <h3>UserName</h3>
+                <p>View on our work</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="leadform">
+        <h3>Apply and share your information here</h3>
+
+        <form action="https://example.com/lead-endpoint" method="POST">
+
+            <!-- Company Info -->
+            <label for="company_name">Company Name:</label>
+            <input type="text" id="company_name" name="company_name" required>
+
+            <label for="website">Website / URL:</label>
+            <input type="url" id="website" name="website">
+
+            <label for="industry">Industry / Sector:</label>
+            <input type="text" id="industry" name="industry">
+
+            <label for="company_size">Company Size:</label>
+            <input type="text" id="company_size" name="company_size">
+
+            <label for="location">Location / Headquarters:</label>
+            <input type="text" id="location" name="location">
+
+            <!-- Contact Person -->
+            <label for="contact_name">Full Name:</label>
+            <input type="text" id="contact_name" name="contact_name" required>
+
+            <label for="job_title">Job Title / Role:</label>
+            <input type="text" id="job_title" name="job_title" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="linkedin">LinkedIn Profile:</label>
+            <input type="url" id="linkedin" name="linkedin">
+
+            <!-- Lead Qualification -->
+            <label for="interested_service">Interested Service / Product:</label>
+            <input type="text" id="interested_service" name="interested_service">
+
+            <label for="budget">Budget Range:</label>
+            <input type="text" id="budget" name="budget">
+
+            <label for="timeline">Timeline to Start:</label>
+            <input type="text" id="timeline" name="timeline">
+
+            <label for="notes">Additional Notes / Requirements:</label>
+            <input type="text" id="notes" name="notes">
+
+            <!-- Submit -->
+            <input type="submit" value="Submit">
+
+        </form>
+
+
+    </section>
+
 </body>
+<script src="index.js"></script>
+
 </html>

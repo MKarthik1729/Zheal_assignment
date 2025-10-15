@@ -1,0 +1,27 @@
+* , body{
+padding: 0;
+margin: 0;
+}
+
+.banner{
+    background-image: url('./public/ngo1.jpg');
+    height: 100vh;
+}
+
+
+.about{
+    display: flex;
+}
+
+.about img{
+    width: 40vw;
+}
+
+.testimonials div{
+ display: flex;
+ gap:2vw;
+}
+
+.testimonials div div{
+    flex-direction: column;
+}
